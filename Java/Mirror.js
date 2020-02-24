@@ -1,6 +1,6 @@
 //TITLE
 var title= document.createElement("title");
-var t= document.createTextNode("I Love HTML");
+var t= document.createTextNode("I Love HTML!!!");
 title.appendChild(t);
 
 document.head.appendChild(title);
@@ -8,7 +8,7 @@ document.head.appendChild(title);
 //H1 Tag
 var division=document.createElement("div");
 var tage = document.createElement("h1");
-var main = document.createTextNode("HTML practice Exercise");
+var main = document.createTextNode("HTML Practice Exercise");
 tage.appendChild(main);
 document.body.appendChild(division);
 division.appendChild(tage);
@@ -40,6 +40,8 @@ var  para = document.createElement("p");
 var main3 = document.createTextNode("I love HTML because:");
 para.appendChild(main3);
 division.appendChild(para);
+para.id="ital3";
+document.getElementById("ital3").style.fontStyle="italic";
 
 //li tags
 var l1 = document.createElement("li");
@@ -66,10 +68,17 @@ division.appendChild(newline2);
 
 //second Paragraph tag
 var para2 = document.createElement("p");
-var main8 = document.createTextNode("My professor's e-mail addresss is ");
+var main8 = document.createTextNode("My professor's e-mail addresss is ")
+var atag= document.createElement("a");
+var Awords = document.createTextNode("clarketb@imu.edu");
+atag.href="mailto:clarketb@imu.edu";
 para2.appendChild(main8);
+atag.appendChild(Awords);
+para2.appendChild(atag);
 division.appendChild(para2);
-/*var head=document.createElement("h1");
-var h=document.createTextNode("HTML practice Exercise");
-head.appendChild(h);
-document.body.appendChild(head);*/
+
+//H3 tag
+var tage3 = document.createElement("h3");
+var main3 = document.createTextNode("Have a great day!");
+tage3.appendChild(main3);
+division.appendChild(tage3);
