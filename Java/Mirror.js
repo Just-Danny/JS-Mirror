@@ -2,8 +2,11 @@
 var title= document.createElement("title");
 var t= document.createTextNode("I Love HTML!!!");
 title.appendChild(t);
-
 document.head.appendChild(title);
+
+
+document.body.style.backgroundColor="cornflowerblue";
+
 
 //H1 Tag
 var division=document.createElement("div");
@@ -44,21 +47,32 @@ para.id="ital3";
 document.getElementById("ital3").style.fontStyle="italic";
 
 //li tags
+var olist=document.createElement("ol");
 var l1 = document.createElement("li");
 var main4 = document.createTextNode("I learned it quickly");
+olist.appendChild(l1);
 l1.appendChild(main4);
-division.appendChild(l1);
+
 
 var l2 = document.createElement("li");
 var main5 = document.createTextNode("I can make web pages using code.");
+olist.appendChild(l2);
 l2.appendChild(main5);
-division.appendChild(l2);
+olist.appendChild(l2);
 
 var l3 = document.createElement("li");
 var main6 = document.createTextNode("It is fun");
 l3.appendChild(main6);
-division.appendChild(l3);
+olist.appendChild(l3);
+division.appendChild(olist);
 
+//img tag
+var pic = document.createElement("IMG");
+pic.src="image/one.jpg";
+pic.id="size";
+division.appendChild(pic);
+document.getElementById("size").style.width="100px";
+document.getElementById("size").style.height="100px";
 
 //Second Hr tag
 var newline2 =document.createElement("hr");
